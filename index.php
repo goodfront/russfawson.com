@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt.php" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Custom Western Saddles by Russ Fawson. Custom leather craft: holsters; gun belts; saddlebags; knife scabbards; rifle scabbards; belts; bridles; breast collars; pommel bags; bucking rolls; spur straps; spurs; leather covered canteens; and more. Custom handmade leather saddles, custom saddle designs, old west saddles, 1800s saddles, wild west replica saddles, old west reenactment saddles, custom cowboy saddles, custom show saddles, working cowboy saddles, parade saddles, custom saddle tooling, riding saddle, roping saddle, barrel racing saddles.</title>
+<!-- InstanceEndEditable -->
+<link href="/_elements/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/_elements/js/prototype.js"></script>
+<script type="text/javascript" src="/_elements/js/rotate.js"></script>
+<!-- InstanceBeginEditable name="head" -->
+<meta name="keywords" content="Custom Western Saddles, holsters, gun belts, saddlebags, pommel bags, rifle scabbards, bridles, breast collars, knife scabbards, bucking rolls, spur straps, spurs, leather covered canteens, belts. Custom handmade leather saddles, custom saddle designs, old west saddles, 1800s saddles, wild west replica saddles, old west reenactment saddles, custom cowboy saddles, custom show saddles, working cowboy saddles, parade saddles, custom saddle tooling, riding saddle, roping saddle, barrel racing saddles, custom saddles, custom leather craft, saddle maker." />
+<meta name="description" content="Custom Western Saddles, holsters, gun belts, saddlebags, pommel bags, rifle scabbards, bridles, breast collars, knife scabbards, bucking rolls, spur straps, spurs, leather covered canteens, belts. Custom handmade leather saddles, custom saddle designs, old west saddles, 1800s saddles, wild west replica saddles, old west reenactment saddles, custom cowboy saddles, custom show saddles, working cowboy saddles, parade saddles, custom saddle tooling, riding saddle, roping saddle, barrel racing saddles, custom saddles, custom leather craft, saddle maker." />
+<meta name="verify-v1" content="XMVDmi6RrNNkAdENHXYoUJ3OBQToCBxuASWRCB/uYvU=" />
+<style type="text/css">
+	.z_side p{
+	color:#55483E;
+	font-size:18px;
+	line-height:40px;
+	}
+	.z_content{
+		border-left:none;
+		margin-left:0px;
+		width: 965px;
+	}
+	.z_side{
+		left: 760px;
+	}
+	.a_tableMenu{
+		width:720px;
+	}
+	.homeImage{ padding:15px 15px 7px; border:1px solid #87765E; border-top: none; margin-top: -2px; }
+.style1 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; }
+</style>
+<!-- InstanceEndEditable --><!-- InstanceParam name="SideNav" type="boolean" value="false" -->
+</head>
+
+<body>
+<div class="z_mainFrame">
+	<div class="z_top">
+		<a href="/" title="Home"><img src="/_elements/images/russ_fawson.jpg" alt="Russ Fawson Saddle Maker" width="254" height="149" border="0" class="z_logo" /></a>
+		<div id="rotate1" class="z_rotate"><img src="/_elements/images/rotate/cowboy_rotate_01.jpg" width="744" height="149"  /></div> <div id="rotate2" class="z_rotate"><img src="/_elements/images/rotate/cowboy_rotate_02.jpg" width="744" height="149"  /></div> <div id="rotate3" class="z_rotate"><img src="/_elements/images/rotate/cowboy_rotate_03.jpg" width="744" height="149"  /></div> <div id="rotate4" class="z_rotate"><img src="/_elements/images/rotate/cowboy_rotate_04.jpg" width="744" height="149"  /></div> <div id="rotate5" class="z_rotate"><img src="/_elements/images/rotate/cowboy_rotate_05.jpg" width="744" height="149"  /></div> <div id="rotate6" class="z_rotate"><img src="/_elements/images/rotate/cowboy_rotate_06.jpg" width="744" height="149"  /></div> <div id="rotate7" class="z_rotate"><img src="/_elements/images/rotate/cowboy_rotate_07.jpg" width="744" height="149"  /></div> <div id="rotate8" class="z_rotate"><img src="/_elements/images/rotate/cowboy_rotate_08.jpg" width="744" height="149"  /></div><script type="text/javascript">$$('.z_rotate').invoke('setOpacity','0');</script>
+	</div>
+	<div class="z_side">
+
+	<!-- InstanceBeginEditable name="SideContent" -->
+	<p>		QUALITY MATERIALS<br />
+		IN THE HANDS OF A<br />
+		SKILLED CRAFTSMAN<br />
+		INSURE A BLEND OF<br />
+		UTILITY&nbsp;AND&nbsp;ARTISTRY<br />
+		OF THE OLD WEST<br />
+		IN A SADDLE<br />
+		CUSTOM FIT FOR YOU.</p>
+	<!-- InstanceEndEditable -->
+	</div>
+	<div class="z_content">
+	<!-- InstanceBeginEditable name="MainContent" -->
+		<table class="a_tableMenu">
+		<tr>
+		<td class="a_menuTD"><a href="/saddles/" class="a_menu1"><img src="/_elements/images/icons/saddle.png" width="60" height="60" align="left" /> Saddles</a>  <a href="/saddles/options.php" class="a_menu2">Options</a> <!--<a href="/saddles/" class="a_menu2">Photos</a><a href="/saddles/prices.php" class="a_menu2">Prices</a>--><br />
+			<a href="/saddles/" class="a_menu3">Quality, custom built.</a></td>
+		<td width="6" rowspan="4">&nbsp;</td>
+		<td rowspan="4" align="center" valign="top" class="a_menuTD" style="padding:0px"><div class="homeImage"><a href="/saddles/"><img src="/_elements/images/legacy_in_leather.jpg" width="334" height="444" style="display:block" /></a><span class="style1">Legacy in Leather by <a href="http://www.robjwilson.blogspot.com/">Rob Wilson</a></span></div></td>
+		</tr><tr>
+		<td class="a_menuTD"> <a href="/accessories/photos.php" class="a_menu1"><img src="/_elements/images/icons/bag.png" width="60" height="60" align="left" /> Accessories</a> <!--<a href="/accessories/photos.php" class="a_menu2">Photos</a> <a href="/accessories/prices.php" class="a_menu2">Prices</a>--><br />
+			<a href="/accessories/" class="a_menu3">If it can be made of leather, Russ can build it!</a>			&nbsp;</td>
+		</tr><tr>
+		<td class="a_menuTD"> <a href="/holsters/photos.php" class="a_menu1"><img src="/_elements/images/icons/holster.png" width="60" height="60" align="left" />Holsters & Scabbards</a> <!--<a href="/holsters/photos.php" class="a_menu2">Photos</a> <a href="/holsters/prices.php" class="a_menu2">Prices</a>--><br />
+			<a href="/holsters/" class="a_menu3">Quality holsters designed to fit your needs.</a>			&nbsp;</td>
+		</tr>
+		<tr>
+			<td valign="top"><table border="0" cellspacing="10" cellpadding="0">
+				<tr>
+					<td align="left" valign="middle" style="padding-left: 50px; padding-bottom: 20px">
+					    <a href="/contact/" class="a_menu1">Contact</a>
+				    </td>
+				</tr>
+				<tr>
+					<td align="left" valign="middle" style="padding-left: 50px">
+					    <a href="/testimonials/" class="a_menu1">Testimonials</a><br />
+						<a href="/testimonials/" class="a_menu3">See what Russ's customers <br />
+						have to say.</a>
+					</td>
+                </tr>
+                <tr>
+					<td align="left" valign="middle" style="padding-left: 50px">
+					    <a href="/about/" class="a_menu1">About Russ</a><br />
+						<a href="/about/" class="a_menu3">Learn a little about <br />
+						Russ Fawson</a>
+					</td>
+				</tr>
+			</table>
+			</td>
+			</tr>
+			</table>
+
+		<div class="bottomText">
+			<p>Russell Fawson, skilled craftsman, uses only quality materials to build custom western saddles, holsters, saddlebags, knife scabbards, belts, bridles, breast collars, pommel bags and more. Each hand crafted leather article is custom built for the customer, being personalized it is, by its very nature, one of a kind. Russell really enjoys most creating what the customer wants, not locking them into what he likes. </p>
+			<p>This is not a saddle, holster or saddlebag factory stamping out large quantities of identical products. Each saddle, holster, saddlebag or other hand crafted item is custom made especially for the customer. Whatever you want; a working cowboy saddle, trail riding saddle, nostalgic old west historical reproduction saddle, or a fancy show saddle, Russ will custom build it for you. He can also create your saddlebags, holsters, rifle scabbards, bridles and any other leather crafted accessory to match your custom saddle. </p>
+			<p>Browse the saddle photos for some samples of Russ' work. Check out the saddle options, and saddle price list pages, then let Russ know what you would like your next custom saddle to look like. </p>
+			<p>Russ works with his wife Becky to create beautiful saddle tooling designs. They will create both floral and pictorial saddle tooling designs, for a fully tooled saddle or one with plain or pattern stamp background. You can also have a saddle with a simple or fancy border.</p>
+			<p>Some saddle options include: Rawhide or leather wrapped saddle horn; Rawhide bead on the saddle gullet; Rawhide or leather wrapped saddle cantle; Straight saddle cantle; Cheyenne roll saddle cantle; Regular saddle fenders; Exposed stirrup strap saddle fenders; Leather wrapped saddle stirrups; Brass covered saddle stirrups; Rawhide wrapped saddle stirrups; In Skirt saddle rigging; Flat Plate saddle rigging; D-ring saddle rigging; O-ring saddle rigging; Dropped O-ring saddle rigging; Saddle tree with slick fork; Saddle tree with swells; Your choice of saddle seat size; Your choice of saddle cantle height; Round saddle skirting; Square saddle skirting; Rounded corners on square saddle skirting; Saddle conchos in brass, nickel or leather; Special engraved silver or brass saddle decoration; </p>
+			<p>All leather crafted items can be plain or tooled. Tooling includes: simple or fancy border; floral; pictorial or pattern stamped such as basket weave, or any combination of leather tooling designs. Items that can be tooled included but are not limited to: saddles; saddlebags; holsters; knife scabbards; rifle scabbards; rifle cases; pommel bags; belts; bridles; breast collars; knife pouch; concealed weapon holster; spurs, spur straps; </p>
+			<p>&nbsp;</p>
+			<p> </p>
+			<p> </p>
+		</div>
+	<!-- InstanceEndEditable -->
+	</div>
+
+</div>
+
+<?php include($_SERVER['DOCUMENT_ROOT'].'/_elements/php/stats.php'); ?>
+</body>
+<!-- InstanceEnd --></html>

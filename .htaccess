@@ -1,0 +1,24 @@
+
+Options -Indexes +FollowSymLinks
+RewriteEngine on 
+
+RewriteCond %{HTTP_HOST} ^russfawson\.com
+RewriteRule ^(.*)$ http://www.russfawson.com/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^russfawson\.goodfront\.com
+RewriteRule ^(.*)$ http://www.russfawson.com/$1 [R=301,L]
+
+
+RewriteRule ^Home(/)?$ / [R=301,L]
+RewriteRule ^Home/Saddles(/)?$ /saddles/ [R=301,L]
+RewriteRule ^Home/Saddles/Photos(/)?$ /saddles/photos.php [R=301,L]
+RewriteRule ^Home/Saddles/Prices(/)?$ /saddles/photos.php [R=301,L]
+RewriteRule ^Home/Saddles/Options(/)?$ /saddles/options.php [R=301,L]
+RewriteRule ^Home/Accessories(/)?$ /accessories/ [R=301,L]
+RewriteRule ^Home/Accessories/Photos(/)?$ /accessories/photos.php [R=301,L]
+RewriteRule ^Home/Accessories/Prices(/)?$ /accessories/photos.php [R=301,L]
+RewriteRule ^Home/Holsters(/)?$ /holsters/ [R=301,L]
+RewriteRule ^Home/Holsters/Photos(/)?$ /holsters/photos.php [R=301,L]
+RewriteRule ^Home/Holsters/Prices(/)?$ /holsters/photos.php [R=301,L]
+RewriteRule ^Home/AboutRuss(/)?$ /about/ [R=301,L]
+RewriteRule ^Home/Contact(/)?$ /contact/ [R=301,L]

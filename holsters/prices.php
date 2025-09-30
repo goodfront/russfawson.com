@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt.php" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Russ Fawson - Holster Prices</title>
+<!-- InstanceEndEditable -->
+<link href="/_elements/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/_elements/js/prototype.js"></script>
+<script type="text/javascript" src="/_elements/js/rotate.js"></script>
+<!-- InstanceBeginEditable name="head" -->
+<style type="text/css">
+<!--
+.tableBG  td, .tableBG th { border-bottom: 1px dotted #877C66; }
+-->
+</style>
+<!-- InstanceEndEditable --><!-- InstanceParam name="SideNav" type="boolean" value="true" -->
+</head>
+
+<body>
+<div class="z_mainFrame">
+	<div class="z_top">
+		<a href="/" title="Home"><img src="/_elements/images/russ_fawson.jpg" alt="Russ Fawson Saddle Maker" width="254" height="149" border="0" class="z_logo" /></a>
+		<div id="rotate1" class="z_rotate"><img src="/_elements/images/rotate/cowboy_rotate_01.jpg" width="744" height="149"  /></div> <div id="rotate2" class="z_rotate"><img src="/_elements/images/rotate/cowboy_rotate_02.jpg" width="744" height="149"  /></div> <div id="rotate3" class="z_rotate"><img src="/_elements/images/rotate/cowboy_rotate_03.jpg" width="744" height="149"  /></div> <div id="rotate4" class="z_rotate"><img src="/_elements/images/rotate/cowboy_rotate_04.jpg" width="744" height="149"  /></div> <div id="rotate5" class="z_rotate"><img src="/_elements/images/rotate/cowboy_rotate_05.jpg" width="744" height="149"  /></div> <div id="rotate6" class="z_rotate"><img src="/_elements/images/rotate/cowboy_rotate_06.jpg" width="744" height="149"  /></div> <div id="rotate7" class="z_rotate"><img src="/_elements/images/rotate/cowboy_rotate_07.jpg" width="744" height="149"  /></div> <div id="rotate8" class="z_rotate"><img src="/_elements/images/rotate/cowboy_rotate_08.jpg" width="744" height="149"  /></div><script type="text/javascript">$$('.z_rotate').invoke('setOpacity','0');</script>
+	</div>
+	<div class="z_side">
+
+		<?php include($_SERVER['DOCUMENT_ROOT'].'/_elements/php/nav.php'); ?>
+
+	<!-- InstanceBeginEditable name="SideContent" --><!-- InstanceEndEditable -->
+	</div>
+	<div class="z_content">
+	<!-- InstanceBeginEditable name="MainContent" -->
+		<h1>Holster Prices</h1>
+		<p align="center">Prices are approximate and will vary with design.
+			<a href="/contact/">Contact us for a quote.</a></p>
+		<div class="tableBG" style="width:475px;">
+			<table width="100%" align="center" cellpadding="5" cellspacing="0">
+				<col width="145" />
+				<col width="75" span="4" />
+				<tr height="13">
+					<th height="13" align="left" nowrap="nowrap">Item</th>
+					<th align="right">Plain</th>
+					<th align="right">Border</th>
+					<th align="right">Pattern</th>
+					<th align="right">Floral</th>
+				</tr>
+				<tr height="13">
+					<td height="13" nowrap="nowrap">Holsters (no belt)</td>
+					<td align="right">$85 </td>
+					<td align="right">$105 </td>
+					<td align="right">$125 </td>
+					<td align="right">$165 </td>
+				</tr>
+				<tr height="13">
+					<td height="13" nowrap="nowrap">Gun Belt</td>
+					<td align="right">$150 </td>
+					<td align="right">$180 </td>
+					<td align="right">$200 </td>
+					<td align="right">$250 </td>
+				</tr>
+				<tr height="13">
+					<td height="13" nowrap="nowrap">Rifle Scabbard</td>
+					<td align="right">$175 </td>
+					<td align="right">$225 </td>
+					<td align="right">$280 </td>
+					<td align="right">$325 </td>
+				</tr>
+				<tr height="13">
+					<td height="13" nowrap="nowrap">Rifle Scabbard with cover</td>
+					<td align="right">$225 </td>
+					<td align="right">$285 </td>
+					<td align="right">$345 </td>
+					<td align="right">$415 </td>
+				</tr>
+				<tr height="13">
+					<td height="13" nowrap="nowrap">Knife Scabbard</td>
+					<td align="right">$45 </td>
+					<td align="right">$60 </td>
+					<td align="right">$90 </td>
+					<td align="right">$130 </td>
+				</tr>
+			</table>
+		</div><p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+	<!-- InstanceEndEditable -->
+	</div>
+
+</div>
+
+<?php include($_SERVER['DOCUMENT_ROOT'].'/_elements/php/stats.php'); ?>
+</body>
+<!-- InstanceEnd --></html>
