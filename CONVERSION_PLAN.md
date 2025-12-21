@@ -21,19 +21,16 @@ This plan outlines the steps needed to convert russfawson.com from a dynamic PHP
 ### 1.2 Inventory & Documentation
 - [x] Document all PHP file dependencies and includes
 - [x] List all data sources (text files in `/saddles/info/text/`)
-- [x] List all photo directories that need thumbnail generation
+- [x] List all photo directories and their thumbnail requirements
 - [x] Document domain/subdomain routing logic (www vs saddles subdomain)
 
 ## Phase 2: Image Processing
 
-### 2.1 Pre-Generate All Thumbnails
-- [ ] Create script to scan all photo directories
-- [ ] Generate thumbnails for `/saddles/info/photos/*.jpg`
-- [ ] Generate thumbnails for `/saddles/featured/*/photos/`
-- [ ] Generate thumbnails for `/accessories/photos/`
-- [ ] Generate thumbnails for `/holsters/photos/`
-- [ ] Store thumbnails in organized directory structure (e.g., `photos/thumbs/`)
-- [ ] Document thumbnail dimensions used (currently varies by gallery type)
+### 2.1 Thumbnail Management
+- [x] Document required thumbnail dimensions for each gallery type
+- [x] Thumbnails will be manually created by designer and committed to repository
+- [x] Verify all existing photos have corresponding thumbnails
+- [x] Created comprehensive THUMBNAILS_README.md with specifications and guidelines
 
 ### 2.2 Update Image References
 - [ ] Create mapping of original images to thumbnail paths
@@ -97,10 +94,9 @@ This plan outlines the steps needed to convert russfawson.com from a dynamic PHP
 
 ### 6.1 Create Build Automation
 - [ ] Write build script (Node.js or shell script) that:
-  - Generates all thumbnails
   - Parses saddle text files
   - Generates all HTML pages from templates
-  - Copies static assets (CSS, JS, images)
+  - Copies static assets (CSS, JS, images, thumbnails)
   - Creates final static site in `dist/` directory
 - [ ] Create HTML templates for reusable components
 - [ ] Implement template engine (Handlebars, EJS, or similar)
@@ -153,7 +149,6 @@ This plan outlines the steps needed to convert russfawson.com from a dynamic PHP
   - Run build script (`npm run build`)
   - Deploy `dist/` contents to `gh-pages` branch
 - [ ] Use `peaceiris/actions-gh-pages@v3` action for deployment
-- [ ] Configure workflow to preserve thumbnail cache if possible
 
 ### 8.3 GitHub Pages Configuration
 - [ ] Enable GitHub Pages in repository settings
@@ -194,9 +189,11 @@ This plan outlines the steps needed to convert russfawson.com from a dynamic PHP
 
 ### 9.2 Adding New Photos
 - [ ] Document process for adding photos to galleries:
-  1. Add images to appropriate directory
-  2. Commit and push changes to GitHub
-  3. GitHub Actions automatically generates thumbnails and deploys
+  1. Add full-size images to appropriate directory
+  2. Designer creates corresponding thumbnails
+  3. Add thumbnails to corresponding thumbs/ directory
+  4. Commit and push changes to GitHub
+  5. GitHub Actions automatically rebuilds and deploys
 
 ### 9.3 Updating Prices/Content
 - [ ] Document process for updating static content pages:
@@ -260,7 +257,7 @@ This plan outlines the steps needed to convert russfawson.com from a dynamic PHP
 
 ## Estimated Effort
 
-- **Phase 1-2:** 4-6 hours (setup and thumbnail generation)
+- **Phase 1-2:** 2-4 hours (setup and thumbnail organization)
 - **Phase 3:** 8-12 hours (content generation logic)
 - **Phase 4-5:** 4-6 hours (navigation and redirects)
 - **Phase 6:** 6-10 hours (build script development)
@@ -268,9 +265,9 @@ This plan outlines the steps needed to convert russfawson.com from a dynamic PHP
 - **Phase 8:** 1-2 hours (GitHub Actions setup - much simpler than manual deployment!)
 - **Phase 9-10:** 2-4 hours (documentation and optimization)
 
-**Total: 29-46 hours** depending on complexity and automation level
+**Total: 27-44 hours** depending on complexity and automation level
 
-Note: Using GitHub Actions significantly simplifies deployment compared to manual processes.
+Note: Using GitHub Actions significantly simplifies deployment compared to manual processes. Thumbnail creation by designer happens in parallel and is not included in this estimate.
 
 ## Next Steps
 
@@ -291,10 +288,12 @@ russfawson.com/
 ├── saddles/
 │   ├── info/
 │   │   ├── text/              # Saddle data files
-│   │   └── photos/            # Original images
-│   └── featured/              # Featured galleries
+│   │   └── photos/            # Original images and thumbs/
+│   └── featured/              # Featured galleries (images and thumbs/)
 ├── accessories/
+│   └── photos/                # Images and thumbs/
 ├── holsters/
+│   └── photos/                # Images and thumbs/
 ├── styles/                     # CSS files
 ├── scripts/                    # Build scripts (Node.js)
 ├── templates/                  # HTML templates
@@ -303,14 +302,15 @@ russfawson.com/
 └── README.md                  # Documentation
 ```
 
+**Note:** All thumbnails are manually created by a designer and committed to the repository alongside the full-size images.
+
 ### What Gets Generated (NOT committed)
 ```
 dist/                          # Built site (excluded by .gitignore)
 ├── index.html
 ├── saddles/
 │   ├── info/
-│   │   ├── photos/
-│   │   │   └── thumbs/       # Generated thumbnails
+│   │   ├── photos/           # Copied from source (including thumbs/)
 │   │   └── [saddle-name].html
 │   └── index.html
 └── ...all other HTML files
