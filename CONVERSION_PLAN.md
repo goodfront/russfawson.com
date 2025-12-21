@@ -19,10 +19,10 @@ This plan outlines the steps needed to convert russfawson.com from a dynamic PHP
 - [x] Set up `.gitignore` to exclude `dist/` and `node_modules/`
 
 ### 1.2 Inventory & Documentation
-- [ ] Document all PHP file dependencies and includes
-- [ ] List all data sources (text files in `/saddles/info/text/`)
-- [ ] List all photo directories that need thumbnail generation
-- [ ] Document domain/subdomain routing logic (www vs saddles subdomain)
+- [x] Document all PHP file dependencies and includes
+- [x] List all data sources (text files in `/saddles/info/text/`)
+- [x] List all photo directories that need thumbnail generation
+- [x] Document domain/subdomain routing logic (www vs saddles subdomain)
 
 ## Phase 2: Image Processing
 
