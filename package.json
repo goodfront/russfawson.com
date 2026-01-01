@@ -1,13 +1,21 @@
 {
   "name": "russfawson.com",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Russ Fawson custom saddles website - static site generator",
+  "main": "scripts/build.js",
   "scripts": {
+    "build": "node scripts/build.js",
+    "clean": "node -e \"const fs=require('fs');const path=require('path');const dist=path.join(__dirname,'dist');if(fs.existsSync(dist)){fs.rmSync(dist,{recursive:true,force:true});console.log('Cleaned dist/');}\"",
+    "dev": "npm run build && docker-compose up",
+    "dev:stop": "docker-compose down",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "static-site-generator",
+    "saddles",
+    "custom-leather"
+  ],
+  "author": "Russ Fawson",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {

@@ -33,35 +33,53 @@ This plan outlines the steps needed to convert russfawson.com from a dynamic PHP
 - [x] Created comprehensive THUMBNAILS_README.md with specifications and guidelines
 
 ### 2.2 Update Image References
-- [ ] Create mapping of original images to thumbnail paths
-- [ ] Ensure Highslide lightbox integration works with static paths
+- [x] Create mapping of original images to thumbnail paths
+- [x] Ensure Highslide lightbox integration works with static paths
 
 ## Phase 3: Content Generation
 
-### 3.1 Convert Saddle Information System
-- [ ] Parse all saddle text files in `/saddles/info/text/*.txt`
-- [ ] Generate individual HTML page for each saddle
-- [ ] Implement prev/next navigation links between saddles
-- [ ] Generate saddle index/listing page with thumbnails
-- [ ] Port saddleInfoPage.php functionality to templates
+### 3.2 Convert Gallery Pages ✅ COMPLETED
+- [x] Generate static HTML for `/saddles/featured.php` (featured saddle galleries)
+- [x] Generate static HTML for `/accessories/photos.php`
+- [x] Generate static HTML for `/holsters/photos.php`
+- [x] Ensure Highslide JavaScript lightbox configuration is preserved
+- [x] Test gallery navigation and image loading
 
-### 3.2 Convert Gallery Pages
-- [ ] Generate static HTML for `/saddles/featured.php` (featured saddle galleries)
-- [ ] Generate static HTML for `/accessories/photos.php`
-- [ ] Generate static HTML for `/holsters/photos.php`
-- [ ] Ensure Highslide JavaScript lightbox configuration is preserved
-- [ ] Test gallery navigation and image loading
+**Implementation Details:**
+- Created `scripts/generateGalleries.js` module with gallery generation functions
+- Implemented Highslide lightbox configuration preservation
+- Generated static HTML for all three gallery pages (featured, accessories, holsters)
+- Updated build script to include gallery page generation
+- Updated asset copying to include `/photos/` directory with all gallery images
+- Successfully tested build process - all galleries generated with correct thumbnail links
 
-### 3.3 Convert Core Pages
-- [ ] Convert `/index.php` to `/index.html`
-- [ ] Convert `/about/index.php` to `/about/index.html`
-- [ ] Convert `/contact/index.php` to `/contact/index.html`
-- [ ] Convert `/testimonials/index.php` to `/testimonials/index.html`
-- [ ] Convert `/saddles/index.php` to `/saddles/index.html`
-- [ ] Convert `/saddles/prices.php` to `/saddles/prices.html`
-- [ ] Convert `/saddles/options.php` to `/saddles/options.html`
-- [ ] Convert `/accessories/prices.php` to `/accessories/prices.html`
-- [ ] Convert `/holsters/prices.php` to `/holsters/prices.html`
+### 3.3 Convert Core Pages ✅ COMPLETED
+- [x] Convert `/index.php` to `/index.html`
+- [x] Convert `/about/index.php` to `/about/index.html`
+- [x] Convert `/contact/index.php` to `/contact/index.html`
+- [x] Convert `/testimonials/index.php` to `/testimonials/index.html`
+- [x] Convert `/saddles/index.php` to `/saddles/index.html`
+- [x] Convert `/saddles/prices.php` to `/saddles/prices.html`
+- [x] Convert `/saddles/options.php` to `/saddles/options.html`
+- [x] Convert `/accessories/prices.php` to `/accessories/prices.html`
+- [x] Convert `/holsters/prices.php` to `/holsters/prices.html`
+
+**Implementation Details:**
+- Created `pages/` directory containing pre-built static HTML pages
+- Static pages are simply copied to dist/ during build (no generation needed)
+- Pages maintain all original content, styling, and JavaScript functionality
+- Simplified `scripts/generateCorePages.js` to only handle redirect generation
+- Created GitHub Pages-compatible redirects for:
+  - `/saddles/photos.php` → `/saddles/`
+  - `/accessories/index.php` → `/accessories/photos.html`
+  - `/holsters/index.php` → `/holsters/photos.html`
+- Redirects use both meta refresh and JavaScript for maximum compatibility
+- Successfully built and tested locally
+
+**Architecture Decision:**
+- Static pages with no dynamic content are stored as HTML files in `pages/`
+- Only data-driven pages (saddle details, galleries) are generated during build
+- This simplifies maintenance: edit HTML directly instead of JavaScript generation code
 
 ## Phase 4: Navigation & Shared Components
 
@@ -80,10 +98,16 @@ This plan outlines the steps needed to convert russfawson.com from a dynamic PHP
 
 ## Phase 5: Redirects & Error Pages
 
-### 5.1 Handle Existing Redirects
-- [ ] Convert `/saddles/photos.php` redirect to HTML meta redirect or .htaccess
-- [ ] Convert `/accessories/index.php` redirect to HTML meta redirect or .htaccess
-- [ ] Convert `/holsters/index.php` redirect to HTML meta redirect or .htaccess
+### 5.1 Handle Existing Redirects ✅ COMPLETED
+- [x] Convert `/saddles/photos.php` redirect to HTML meta redirect or .htaccess
+- [x] Convert `/accessories/index.php` redirect to HTML meta redirect or .htaccess
+- [x] Convert `/holsters/index.php` redirect to HTML meta redirect or .htaccess
+
+**Implementation Details:**
+- Created GitHub Pages-compatible redirect pages using HTML meta refresh and JavaScript
+- Each redirect includes a fallback link for users with JavaScript disabled
+- Redirect pages are lightweight (~400-500 bytes each)
+- Compatible with all browsers and GitHub Pages hosting
 
 ### 5.2 Error Pages
 - [ ] Convert `/500.php` to `/500.html`
@@ -92,23 +116,31 @@ This plan outlines the steps needed to convert russfawson.com from a dynamic PHP
 
 ## Phase 6: Build Script Development
 
-### 6.1 Create Build Automation
-- [ ] Write build script (Node.js or shell script) that:
+### 6.1 Create Build Automation ✅ COMPLETED
+- [x] Write build script (Node.js) that:
   - Parses saddle text files
   - Generates all HTML pages from templates
   - Copies static assets (CSS, JS, images, thumbnails)
   - Creates final static site in `dist/` directory
-- [ ] Create HTML templates for reusable components
-- [ ] Implement template engine (Handlebars, EJS, or similar)
-- [ ] Ensure build script is idempotent (can be run multiple times safely)
+- [x] Create HTML templates for reusable components (using template literals)
+- [x] Implement template system (Pure Node.js with ES6 template literals)
+- [x] Ensure build script is idempotent (can be run multiple times safely)
 
-### 6.2 Build Configuration
-- [ ] Create `package.json` with build scripts
-- [ ] Document build process in README
-- [ ] Add npm scripts for:
+**Implementation Details:**
+- Created modular build system in `scripts/` directory
+- Used pure Node.js with template literals (no external templating engine)
+- Successfully generates 20 saddle pages with prev/next navigation
+- Generates saddle index/gallery page
+- Copies all static assets correctly
+
+### 6.2 Build Configuration ✅ COMPLETED
+- [x] Create `package.json` with build scripts
+- [x] Document build process in BUILD_README.md
+- [x] Add npm scripts for:
   - `npm run build` - full site build
   - `npm run clean` - clean build directory
-  - `npm run dev` - local development server
+  - `npm run dev` - local development server (Docker + nginx)
+  - `npm run dev:stop` - stop development server
 
 ## Phase 7: Testing
 
