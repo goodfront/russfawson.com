@@ -68,6 +68,16 @@ async function copyAssets() {
     path.join(DIST_DIR, 'photos')
   );
 
+  // Copy favicon.ico
+  console.log('   📄 Copying favicon...');
+  const faviconSrc = path.join(SRC_DIR, 'favicon.ico');
+  const faviconDest = path.join(DIST_DIR, 'favicon.ico');
+  if (fs.existsSync(faviconSrc)) {
+    fs.copyFileSync(faviconSrc, faviconDest);
+  } else {
+    console.warn('   ⚠️  favicon.ico not found');
+  }
+
   console.log('   ✓ All assets copied');
 }
 
