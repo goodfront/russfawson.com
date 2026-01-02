@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Russ Fawson - Jace's Saddle</title>
+
+<link href="/_elements/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/_elements/js/prototype.js"></script>
+<script type="text/javascript" src="/_elements/js/rotate.js"></script>
+<style type="text/css">
+#infoHolder {
+	position: relative;
+	margin:10px 0px;
+}
+#infoImage {
+	position: absolute;
+	right: 0px;
+	border: 1px solid #544A3E;
+	bottom: 0px;
+}
+#infoThumbs {
+	height: 372px;
+	width: 280px;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	overflow: visible;
+	line-height: 0px;
+}
+#infoThumbs img {
+	height: 176px;
+	width: 130px;
+	border: solid 1px #544A3E;
+}
+#infoThumbs img.thumbHover{
+	cursor:pointer;
+	border-width:3px;
+	margin:-2px;
+}
+#infoThumb1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+#infoThumb2 {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+#infoThumb3 {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+#infoThumb4 {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+#infoNav img {
+	margin-right: 20px;
+	margin-left: 20px;
+	border-style: none;
+}
+#infoHead {
+	font-size:24px;
+	margin: 0px 0px 2px 0px;
+	padding: 0px;
+}
+#infoText {
+	width: 280px;
+}
+#infoText ul {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-left: 1.5em;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height:12px;
+}
+#infoText ul li {
+	margin: 1px 0px 5px 0px;
+	padding: 0px;
+}
+#infoPrice {
+	margin: 4px 0px 0px 0px;
+	padding: 0px;
+	font-size:14px;
+}
+#infoNav {
+	height: 30px;
+	margin-bottom: 10px;
+	text-align: center;
+	border-top: 1px solid #544A3E;
+	padding-top: 10px;
+}
+.infoSideSpace{
+	float:right;
+	height:575px;
+	width:100px;
+}
+.infoUnderTextSpace{
+	height:382px;
+	width:100px;
+}
+</style>
+<!--[if IE 6]>
+<style type="text/css">
+.infoSideSpace{
+	float: none;
+	display:none;
+}
+.infoUnderTextSpace{
+	display:none;
+}
+#infoText {
+	overflow: auto;
+	position: absolute;
+	height: 220px;
+	left: 0px;
+	top: 0px;
+	width: 280px;
+}
+#infoHolder {
+	height: 600px;
+}
+</style>
+<![endif]--><script language="javascript">
+var infoImageSrc = '';
+var loadImg = new Array();
+var timmer = null;
+function thumbHover(){
+	var thumbs = $$('#infoThumbs img');
+	var infoImage = $('infoImage');
+	infoImageSrc = infoImage.src;
+	for(var t=0;t<thumbs.length;t++){
+		loadImg[t] = new Image;
+		loadImg[t].src = thumbs[t].src.replace('_thumbs/','');
+		thumbs[t].onmouseover = function(){
+			if(timmer) clearTimeout(timmer);
+			this.addClassName('thumbHover');
+			infoImage.src = this.src.replace('_thumbs/','');
+		}
+		thumbs[t].onmouseout = function(){
+			this.removeClassName('thumbHover');
+			timmer = setTimeout('$("infoImage").src = infoImageSrc;',250);
+		}
+	}
+}
+</script>
+</head>
+
+<body>
+<div class="z_mainFrame">
+	<div class="z_top">
+		<a href="/" title="Home"><img src="/_elements/images/russ_fawson.jpg" alt="Russ Fawson Saddle Maker" width="254" height="149" border="0" class="z_logo" /></a>
+		<div id="rotate1" class="z_rotate"><img src="/_elements/images/rotate/cowboy_rotate_01.jpg" width="744" height="149"  /></div>
+		<div id="rotate2" class="z_rotate"><img src="/_elements/images/rotate/cowboy_rotate_02.jpg" width="744" height="149"  /></div>
+		<div id="rotate3" class="z_rotate"><img src="/_elements/images/rotate/cowboy_rotate_03.jpg" width="744" height="149"  /></div>
+		<div id="rotate4" class="z_rotate"><img src="/_elements/images/rotate/cowboy_rotate_04.jpg" width="744" height="149"  /></div>
+		<div id="rotate5" class="z_rotate"><img src="/_elements/images/rotate/cowboy_rotate_05.jpg" width="744" height="149"  /></div>
+		<div id="rotate6" class="z_rotate"><img src="/_elements/images/rotate/cowboy_rotate_06.jpg" width="744" height="149"  /></div>
+		<div id="rotate7" class="z_rotate"><img src="/_elements/images/rotate/cowboy_rotate_07.jpg" width="744" height="149"  /></div>
+		<div id="rotate8" class="z_rotate"><img src="/_elements/images/rotate/cowboy_rotate_08.jpg" width="744" height="149"  /></div>
+		<script type="text/javascript">$$('.z_rotate').invoke('setOpacity','0');</script>
+	</div>
+	<div class="z_side">
+		<p><a href="/">Home</a></p>
+<p><a href="/saddles/">Saddles</a></p>
+<p class="l2nav"><a href="/saddles/options.html">Options</a></p>
+<p><a href="/accessories/photos.html">Accessories</a></p>
+<p><a href="/holsters/photos.html">Holsters & Scabbards</a></p>
+<p><a href="/testimonials/">Testimonials</a></p>
+<p><a href="/about/">About Russ</a></p>
+<p><a href="/contact/">Contact</a></p>
+<script type="text/javascript">
+	var x = $$('.z_side a');
+	for(i=0;i<x.length;i++){
+		thisLink = x[i];
+		if(thisLink.href == location.href){
+			thisLink.addClassName('sel');
+		}else if(thisLink.href == location.href+'index.html'){
+			thisLink.addClassName('sel');
+		}else if(thisLink.href+'index.html' == location.href){
+			thisLink.addClassName('sel');
+		}
+	}
+</script>
+		
+	</div>
+	<div class="z_content">
+		<div id="infoHolder">
+	<div class="infoSideSpace"></div>
+	<div id="infoText">
+		<h1 id="infoHead">Jace's Saddle</h1>
+		<ul>
+<li><strong>Tree</strong>: Will James</li>
+<li><strong>Horn</strong>: 3x3 Wood, Rawhide Wrap</li>
+<li><strong>Cantle</strong>: 5" Straight w/Rawhide Wrap</li>
+<li><strong>Seat</strong>: 15"</li>
+<li><strong>Skirting</strong>: Round</li>
+<li><strong>Fender</strong>: Outside Stirrup Leathers</li>
+<li><strong>Stirrups</strong>: 1 1/2" Visalia, Rawhide Wrap</li>
+<li><strong>Rigging</strong>: Brass D-Ring, Front & Rear</li>
+<li><strong>Tooling</strong>: Running W Border</li>
+		</ul>
+	</div>
+	<div class="infoUnderTextSpace"></div>
+	<div style="clear:both"></div>
+	<img src="/saddles/info/photos/CustomSaddle-120-JacesSaddle.jpg" id="infoImage" />
+	<div id="infoThumbs">
+<img src="/saddles/info/photos/_thumbs/CustomSaddle-120-JacesSaddle1.jpg" id="infoThumb1" />
+<img src="/saddles/info/photos/_thumbs/CustomSaddle-120-JacesSaddle2.jpg" id="infoThumb2" />
+<img src="/saddles/info/photos/_thumbs/CustomSaddle-120-JacesSaddle3.jpg" id="infoThumb3" />
+<img src="/saddles/info/photos/_thumbs/CustomSaddle-120-JacesSaddle4.jpg" id="infoThumb4" />
+	</div>
+</div>
+<div id="infoNav">
+	<a href="MitchsSaddle.html"><img src="/_elements/images/info_nav/previous.png" width="36" height="30" /></a>
+	<a href="../"><img src="/_elements/images/info_nav/index.png" width="47" height="30" /></a>
+	<a href="RussMaverick.html"><img src="/_elements/images/info_nav/next.png" width="36" height="30" /></a>
+</div><script type="text/javascript">thumbHover();</script>
+	</div>
+</div>
+</body>
+</html>
